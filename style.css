@@ -1,0 +1,75 @@
+body {
+    background-color: #3f98cc; 
+    color: rgb(50, 50, 50);
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.topo {
+    background-color: #ffffff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    margin-bottom: 30px;
+}
+
+h1 {
+    color: #201e1e;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin: 0;
+}
+
+.acesso {
+    padding: 10px 20px;
+    background-color: #201e1e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+}
+
+.explicação {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+    position: relative;
+    z-index: 10;
+}
+
+img[src="Minion.webp"] {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 50%;
+    height: auto;
+    z-index: 1;
+    pointer-events: none;
+}
+@keyframes balanco {
+    0% {
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    }
+    50% {    
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 95%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    }
+}
+.topo {
+    background-color: #ffffff;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    animation: balanco 4s infinite ease-in-out;
+}

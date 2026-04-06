@@ -4,13 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula assistentes</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>
-        Aula de assistentes
-    </h1>
-    <Div>Bem vindos!</Div>
+    <header class="topo">
+        <h1><em>Aula assistentes</em></h1>
+    </header>
+    <div class="bvd" style="cursor: pointer;" onclick="document.querySelector('.minion-img').removeAttribute('hidden')">
+    Bem vindos!
+</div>
+
+<img src="Minion.webp" alt="Minion decorativo" class="minion-img" hidden>
+</div>
+  <button class="acesso" onclick="document.querySelector('.explicação').removeAttribute('hidden')">
+        Aprender
+    </button>
+  <div hidden class="explicação">
+    Primeiro vamos entender como funciona e o que são os comandos. 
+    Veja nossas <a href="fotos.html" class="link-fotos">Fotos da Aula</a>.
+</div>
 </body>
-<button>Aprender</button>
-<div>primeiro vamos entender como funciona e oque são os comandos</div>
 </html>
